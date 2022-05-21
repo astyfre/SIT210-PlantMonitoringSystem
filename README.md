@@ -16,3 +16,5 @@ in the second row put 'field1' > '{{{PARTICLE_EVENT_VALUE}}}'
 Now you should be able to send data to thingspeak from particle using 'Particle.publish("Plant_Moisture", Soil_Moisture);' 
 
 From the RaspberryPi's end there is a function 'def read_data_thingspeak' that will read the data that was published to thingspeak. 
+The URL will be https://api.thingspeak.com/channels/_YOURCHANNELID_/fields/1.json?api_key=
+and the KEY will be your API Read Key found in the 'API Keys' setting
