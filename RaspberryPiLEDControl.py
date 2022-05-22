@@ -6,6 +6,7 @@ import requests
 import threading
 import json
 import time
+
 import random
 
 ## hardware def
@@ -14,7 +15,7 @@ led2 = LED(15)
 led3 = LED(18)
 
 
-##To read the data from thingspeak
+
 def read_data_thingspeak():
 	URL='https://api.thingspeak.com/channels/1728230/fields/1.json?api_key='
 	KEY='E8AKHE9RFZ3NPKP8'
@@ -64,14 +65,14 @@ if __name__ == '__main__':
 	while True: #infinite loop
 		moistureList = read_data_thingspeak()
 		moistureStr = (moistureList[0])
-		moisture = int(moistureStr)
+		moisture = float(moistureStr)
 		
-		if moisture < 200:
+		if moisture < 20: #Blue light means water
 			ledLow()
-		elif moisture < 600:
+		elif moisture < 60: #Green light means good amount of water
 			ledMed()
-		else:
-			ledHigh()
+		else:	#Red Light means too much water
+			ledHigh() 
 		time.sleep(10)
 
 	
