@@ -73,6 +73,6 @@ if __name__ == '__main__':
 			ledMed()
 		else:	#Red Light means too much water
 			ledHigh() 
-		time.sleep(10)
+		time.sleep(600) #can change for however frequently youd like to check change
 
 	
