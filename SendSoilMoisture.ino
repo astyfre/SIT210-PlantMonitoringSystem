@@ -14,7 +14,7 @@ void loop() {
   Serial.print("Moisture percent");
   Serial.print(moisture_percent);
   Particle.publish("Plant_Moisture", Soil_Moisture);
-  delay(5000000);
+  delay(3600000);
 
 }
 
