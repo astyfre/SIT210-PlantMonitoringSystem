@@ -9,7 +9,7 @@ void setup() {
 void loop() {
   
   int sensor_analog = analogRead(soilPin);
-  float moisture_percent = (((sensor_analog/4095.00) * 100));
-  Particle.publish("Plant_Moisture", String(moisture_percent)); //sends data to thingspeak using webhook
+  
+  Particle.publish("Plant_Moisture", String(sensor_analog)); //sends data to thingspeak using webhook
   delay(3600000); //Checks once per hour
 }
