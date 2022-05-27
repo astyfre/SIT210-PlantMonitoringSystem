@@ -22,4 +22,4 @@ The URL will be https://api.thingspeak.com/channels/_YOURCHANNELID_/fields/1.jso
 and the KEY will be your API Read Key found in the 'API Keys' setting
 !!For help with how to format this go to https://au.mathworks.com/help/thingspeak/readfield.html
 
-Link to project Video: 
+Link to project Video: https://youtu.be/hcxKtthS6rI
