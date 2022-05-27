@@ -67,9 +67,9 @@ if __name__ == '__main__':
 		moistureStr = (moistureList[0])
 		moisture = float(moistureStr)
 		
-		if moisture < 20: #Blue light means water
+		if moisture < 50: #Blue light means water
 			ledLow()
-		elif moisture < 60: #Green light means good amount of water
+		elif moisture < 100: #Green light means good amount of water
 			ledMed()
 		else:	#Red Light means too much water
 			ledHigh() 
